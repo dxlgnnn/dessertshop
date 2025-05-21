@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise6</title>
+  <style>
+    .King {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      gap: 30px;
+      justify-content: center;
+      
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+    } 
+    @media (max-width: 600px) {
+      .King {
+        gap: 10px;
+      }
+    }
+    @media (max-width: 400px) {
+      .King {
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="King">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+
+</body>
+</html>
