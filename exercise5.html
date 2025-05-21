@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+
+        div{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            display: inline-block
+        }
+        @media only screen and (max-width: 900px) {
+        .first {
+            display: block;
+            margin: 5px 0;
+        }
+
+        } 
+        @media only screen and (max-width: 600px) {
+        .second {
+            display: block;
+            margin: 5px 0;
+        }
+
+        } 
+        @media only screen and (max-width: 480px) {
+        .rest {
+            display: block;
+            margin: 5px 0;
+        }
+
+        } 
+
+    </style>
+    <body>
+        <div class="rest"></div>
+        <div class="rest"></div>
+        <div class="rest"></div>
+        <div class="rest"></div>
+        <div class="second"></div>
+        <div class="first"></div>
+    </body>
+    </html>
